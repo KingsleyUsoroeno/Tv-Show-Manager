@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tv Show Manager</string>
+    <string name="app_name_all_caps">TV SHOW MANAGER</string>
+    <string name="add_new_tv_show_all_caps">ADD NEW TV SHOW</string>
+    <string name="show_added_tv_shows_all_caps">SHOW LIST OF ADDED TV SHOWS</string>
+    <string name="save_tv_show_all_caps">SAVE TV SHOW</string>
+    <string name="tv_show">Tv Show</string>
+    <string name="release_date">Release Date</string>
+    <string name="seasons">Seasons</string>
+
+    <string name="text_provide_a_tv_show_name">Please provide a valid tv show name</string>
+    <string name="text_provide_a_valid_release_date">Please provide a valid release date</string>
+    <string name="text_provide_a_valid_season_count">Please provide a valid season count</string>
+    <string name="text_season_colon">Season:</string>
+    <string name="release_date_colon">Release Date:</string>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainScreenFragment">
+
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="com.example.tvshowmanager.presentation.main.MainScreenFragment"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen">
+        <action
+            android:id="@+id/action_mainScreenFragment_to_addNewTvShowFragment"
+            app:destination="@id/addNewTvShowFragment" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_savedTvShowsFragment"
+            app:destination="@id/savedTvShowsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addNewTvShowFragment"
+        android:name="com.example.tvshowmanager.presentation.tvshows.AddNewTvShowFragment"
+        android:label="fragment_add_new_tv_show"
+        tools:layout="@layout/fragment_add_new_tv_show" />
+    <fragment
+        android:id="@+id/savedTvShowsFragment"
+        android:name="com.example.tvshowmanager.presentation.tvshows.SavedTvShowsFragment"
+        android:label="fragment_saved_tv_shows"
+        tools:layout="@layout/fragment_saved_tv_shows" />
+</navigation>
