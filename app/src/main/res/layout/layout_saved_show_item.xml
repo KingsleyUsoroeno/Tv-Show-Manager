@@ -53,7 +53,7 @@
 
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txt_season"
+            android:id="@+id/edtSeason"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/proxima_nova_bold"
@@ -70,10 +70,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
             android:fontFamily="@font/proxima_nova_regular"
-            app:layout_constraintBottom_toBottomOf="@id/txt_season"
+            app:layout_constraintBottom_toBottomOf="@id/edtSeason"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/txt_season"
-            app:layout_constraintTop_toTopOf="@id/txt_season"
+            app:layout_constraintStart_toEndOf="@id/edtSeason"
+            app:layout_constraintTop_toTopOf="@id/edtSeason"
             tools:text="7" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,5 +16,6 @@ object Versions {
     const val kotlinVersion: String = "1.4.31"
     const val testExt: String = "1.1.1"
     const val runner: String = "1.2.0"
-    const val apollo : String = "2.4.6"
+    const val apollo: String = "2.4.6"
+    const val lifecycleVersion = "2.4.0-alpha03"
 }

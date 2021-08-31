@@ -33,6 +33,8 @@ object Dependencies {
             "com.google.android.material:material:${Versions.material}"
         const val constraintLayout: String =
             "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+        const val lifeCycleLiveData =
+            "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycleVersion}"
     }
 
     interface Libraries {

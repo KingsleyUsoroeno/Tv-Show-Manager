@@ -8,10 +8,11 @@
     <string name="release_date">Release Date</string>
     <string name="seasons">Seasons</string>
 
-    <string name="text_provide_a_tv_show_name">Please provide a valid tv show name</string>
+    <string name="text_provide_a_tv_show_name">Please provide a valid name</string>
     <string name="text_provide_a_valid_release_date">Please provide a valid release date</string>
     <string name="text_provide_a_valid_season_count">Please provide a valid season count</string>
     <string name="text_season_colon">Season:</string>
     <string name="release_date_colon">Release Date:</string>
+    <string name="movies_you_save_will_appear_here">Movies you save will appear here</string>
 
 </resources>

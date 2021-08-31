@@ -104,4 +104,5 @@ dependencies {
     kapt(DI.AnnotationProcessor.jetpackHiltCompiler)
 
     implementAll(Apollo.components)
+    implementation(View.lifeCycleLiveData)
 }
