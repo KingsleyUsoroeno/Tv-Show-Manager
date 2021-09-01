@@ -8,7 +8,7 @@ import java.util.*
 
 @Entity(tableName = "Movie")
 data class CachedMovieEntity(
-    @PrimaryKey(autoGenerate = true) val id: Int = 0,
+    @PrimaryKey val id: String,
     val title: String,
     val releaseDate: Date,
     val seasons: Int
@@ -18,7 +18,7 @@ data class CachedMovieEntity(
             id = id,
             title = title,
             releaseDate = releaseDate.timeString,
-            seasons = seasons.toInt()
+            seasons = seasons
         )
     }
 }

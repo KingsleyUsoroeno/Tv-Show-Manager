@@ -9,9 +9,12 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class SavedTvShowsViewModel @Inject constructor(
+class SavedTvShowsFragmentViewModel @Inject constructor(
     private val movieRepository: MovieRepository,
 ) : ViewModel() {
 
-    val movies: LiveData<List<Movie>> get() = movieRepository.getAllMovies().asLiveData()
+    /** Opted to convert the flow from the data layer to a LiveData observable
+     * as it much suites the use-case of not having to observe the flow only when
+     * its on a started state as LiveData does that underneath the hood for us*/
+    val savedMovies: LiveData<List<Movie>> get() = movieRepository.getAllMovies().asLiveData()
 }

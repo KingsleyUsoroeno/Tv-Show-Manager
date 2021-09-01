@@ -40,6 +40,10 @@ abstract class BaseFragment<V : ViewBinding> : Fragment() {
         findNavController().navigateUp()
     }
 
+    protected fun pop() {
+        findNavController().popBackStack()
+    }
+
     override fun onDestroyView() {
         _binding = null
         super.onDestroyView()

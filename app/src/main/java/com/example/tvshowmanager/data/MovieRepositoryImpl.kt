@@ -1,6 +1,7 @@
 package com.example.tvshowmanager.data
 
 import com.example.tvshowmanager.data.local.contract.CacheMovieRepository
+import com.example.tvshowmanager.data.local.models.CachedMovieEntity
 import com.example.tvshowmanager.data.model.Movie
 import com.example.tvshowmanager.data.remote.contract.MovieRemoteRepository
 import kotlinx.coroutines.flow.Flow
@@ -18,14 +19,15 @@ class MovieRepositoryImpl @Inject constructor(
         try {
             val movie = movieRepository.createMovie(title, releaseDate, seasons)
             movie?.let {
-                cacheMovieRepository.saveMovie(
+                val cachedMovieEntity = CachedMovieEntity(
+                    id = it.id,
                     title = it.title,
                     releaseDate = convertToDate(it.releaseDate),
                     seasons = it.seasons?.toInt() ?: 0
                 )
+                cacheMovieRepository.saveMovie(cachedMovieEntity)
             }
         } catch (e: Exception) {
-            println("Caught Exception is ${e.localizedMessage}")
             throw e
         }
     }

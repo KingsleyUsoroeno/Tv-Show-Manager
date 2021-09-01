@@ -8,5 +8,5 @@ interface MovieRemoteRepository {
         title: String,
         releaseDate: Date,
         seasons: Double
-    ): CreateMovieMutation.Movie? = throw  Exception()
+    ): CreateMovieMutation.Movie? = throw Exception()
 }

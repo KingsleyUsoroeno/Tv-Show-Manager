@@ -4,5 +4,4 @@ import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class TvShowManagerApplication : Application() {
-}
+class TvShowManagerApplication : Application()

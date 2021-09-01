@@ -1,7 +1,6 @@
 package com.example.tvshowmanager.utils.extensions
 
 import android.view.View
-import com.example.tvshowmanager.utils.Constants
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import java.text.SimpleDateFormat
@@ -21,7 +20,10 @@ fun TextInputLayout.validate(errorMessage: String, validator: (text: String) -> 
 
 val Date.timeString: String
     get() {
-        val simpleDateFormat = SimpleDateFormat(Constants.DATE_FORMAT, Locale.getDefault())
+        val simpleDateFormat = SimpleDateFormat(
+            "MMMM dd yyyy",
+            Locale.getDefault()
+        )
         return simpleDateFormat.format(this)
     }
 

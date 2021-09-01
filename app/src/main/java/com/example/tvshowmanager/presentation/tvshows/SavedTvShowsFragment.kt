@@ -15,7 +15,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class SavedTvShowsFragment : BaseFragment<FragmentSavedTvShowsBinding>() {
 
-    private val viewModel: SavedTvShowsViewModel by viewModels()
+    private val fragmentViewModel: SavedTvShowsFragmentViewModel by viewModels()
 
     override fun getLayoutBinding(container: ViewGroup?): FragmentSavedTvShowsBinding {
         return FragmentSavedTvShowsBinding.inflate(layoutInflater, container, false)
@@ -24,7 +24,7 @@ class SavedTvShowsFragment : BaseFragment<FragmentSavedTvShowsBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel.movies.observe(this.viewLifecycleOwner, { movies ->
+        fragmentViewModel.savedMovies.observe(this.viewLifecycleOwner, { movies ->
             initRecyclerView(movies)
         })
     }

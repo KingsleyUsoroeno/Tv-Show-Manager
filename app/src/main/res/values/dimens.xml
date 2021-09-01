@@ -8,6 +8,7 @@
     <dimen name="text_size_big">22sp</dimen>
     <dimen name="text_size_large">28sp</dimen>
     <dimen name="button_text_size">12sp</dimen>
+    <dimen name="toolbar_elevation">8dp</dimen>
 
     <dimen name="textInput_text_size">16sp</dimen>
 
@@ -16,8 +17,28 @@
     <dimen name="match_constraint_width">0dp</dimen>
     <dimen name="match_constraint_height">0dp</dimen>
 
-    <dimen name="default_button_height">48dp</dimen>
+    <dimen name="default_button_height">46dp</dimen>
     <dimen name="toolbar_text_size">18sp</dimen>
+
+    <dimen name="button_width">200dp</dimen>
+
+    <dimen name="top_margin">20dp</dimen>
+    <dimen name="top_margin_extra">24dp</dimen>
+    <dimen name="top_margin_big">30dp</dimen>
+    <dimen name="bottom_margin_large">40dp</dimen>
+    <dimen name="top_margin_extra_small">8dp</dimen>
+    <dimen name="margin_top_small">10dp</dimen>
+    <dimen name="margin_top_medium">16dp</dimen>
+
+
+    <dimen name="margin_end_extra_small">6dp</dimen>
+    <dimen name="margin_end_small">10dp</dimen>
+    <dimen name="margin_end_medium">12dp</dimen>
+    <dimen name="margin_end_medium_extra">14dp</dimen>
+    <dimen name="margin_bottom_small">10dp</dimen>
+    <dimen name="margin_start_small">10dp</dimen>
+    <dimen name="margin_start_extra_small">6dp</dimen>
+    <dimen name="margin_top_large">60dp</dimen>
 
 </resources>
 

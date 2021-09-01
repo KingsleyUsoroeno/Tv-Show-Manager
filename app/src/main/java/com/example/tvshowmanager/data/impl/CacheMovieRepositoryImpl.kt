@@ -6,7 +6,6 @@ import com.example.tvshowmanager.data.local.models.CachedMovieEntity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.withContext
-import java.util.*
 import javax.inject.Inject
 
 class CacheMovieRepositoryImpl @Inject constructor(
@@ -15,13 +14,8 @@ class CacheMovieRepositoryImpl @Inject constructor(
 
     private val movieDao get() = movieDatabase.movieDao
 
-    override suspend fun saveMovie(title: String, releaseDate: Date, seasons: Int) {
+    override suspend fun saveMovie(movie: CachedMovieEntity) {
         withContext(Dispatchers.IO) {
-            val movie = CachedMovieEntity(
-                title = title,
-                releaseDate = releaseDate,
-                seasons = seasons
-            )
             movieDao.insertMovie(movie)
         }
     }

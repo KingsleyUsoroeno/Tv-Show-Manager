@@ -10,6 +10,7 @@ mutation CreateMovie($title:String!, $releaseDate: Date, $seasons: Float!) {
             title
             releaseDate
             seasons
+            id
         }
     }
 }
