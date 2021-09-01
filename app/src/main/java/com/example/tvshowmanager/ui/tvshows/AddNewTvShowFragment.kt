@@ -1,4 +1,4 @@
-package com.example.tvshowmanager.presentation.tvshows
+package com.example.tvshowmanager.ui.tvshows
 
 import android.os.Bundle
 import android.view.View
@@ -8,7 +8,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.example.tvshowmanager.R
 import com.example.tvshowmanager.databinding.FragmentAddNewTvShowBinding
-import com.example.tvshowmanager.presentation.main.BaseFragment
+import com.example.tvshowmanager.ui.main.BaseFragment
 import com.example.tvshowmanager.utils.extensions.hide
 import com.example.tvshowmanager.utils.extensions.show
 import com.example.tvshowmanager.utils.extensions.textString

@@ -19,22 +19,29 @@ object Dependencies {
         }
     }
 
-    object AndroidX {
-        const val coreKtx: String = "androidx.core:core-ktx:${Versions.ktxCore}"
-        const val navigationFragment =
+    object AndroidX : Libraries {
+        private const val coreKtx: String = "androidx.core:core-ktx:${Versions.ktxCore}"
+        private const val navigationFragment =
             "androidx.navigation:navigation-fragment-ktx:${Versions.navVersion}"
-        const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navVersion}"
-        const val multiDex: String = "androidx.multidex:multidex:${Versions.multidex}"
+        private const val navigationUi =
+            "androidx.navigation:navigation-ui-ktx:${Versions.navVersion}"
+        private const val multiDex: String = "androidx.multidex:multidex:${Versions.multidex}"
+        override val components: List<String> = listOf(
+            coreKtx, navigationFragment, navigationUi, multiDex
+        )
     }
 
-    object View {
-        const val appCompat: String = "androidx.appcompat:appcompat:${Versions.appCompat}"
-        const val materialComponent: String =
+    object View : Libraries {
+        private const val appCompat: String = "androidx.appcompat:appcompat:${Versions.appCompat}"
+        private const val materialComponent: String =
             "com.google.android.material:material:${Versions.material}"
-        const val constraintLayout: String =
+        private const val constraintLayout: String =
             "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
-        const val lifeCycleLiveData =
+        private const val lifeCycleLiveData =
             "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycleVersion}"
+
+        override val components: List<String>
+            get() = listOf(appCompat, materialComponent, lifeCycleLiveData)
     }
 
     interface Libraries {
@@ -98,6 +105,11 @@ object Dependencies {
         const val junit: String = "junit:junit:${Versions.jUnit}"
         const val runner: String = "androidx.test:runner:${Versions.runner}"
         const val androidXTest: String = "androidx.test.ext:junit:${Versions.testExt}"
+        const val truth: String = "com.google.truth:truth:${Versions.truth}"
+        const val coroutinesTest: String =
+            "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
+        const val robolectric: String = "org.robolectric:robolectric:${Versions.robolectric}"
+        const val androidXTestCore = "androidx.test:core:${Versions.androidXTestCore}"
     }
 
     object Apollo : Libraries {

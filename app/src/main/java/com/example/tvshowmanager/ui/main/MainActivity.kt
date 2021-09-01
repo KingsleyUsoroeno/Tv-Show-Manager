@@ -1,4 +1,4 @@
-package com.example.tvshowmanager.presentation.main
+package com.example.tvshowmanager.ui.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

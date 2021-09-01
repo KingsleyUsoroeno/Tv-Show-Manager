@@ -1,4 +1,4 @@
-package com.example.tvshowmanager.presentation.tvshows
+package com.example.tvshowmanager.ui.tvshows
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
@@ -14,7 +14,8 @@ class SavedTvShowsFragmentViewModel @Inject constructor(
 ) : ViewModel() {
 
     /** Opted to convert the flow from the data layer to a LiveData observable
-     * as it much suites the use-case of not having to observe the flow only when
-     * its on a started state as LiveData does that underneath the hood for us*/
+     * as it much suites the use-case of not having to observe the flow only when the
+     * view e.g Fragment or Activity lifecycle is in a started state
+     * as LiveData does that underneath the hood for us*/
     val savedMovies: LiveData<List<Movie>> get() = movieRepository.getAllMovies().asLiveData()
 }

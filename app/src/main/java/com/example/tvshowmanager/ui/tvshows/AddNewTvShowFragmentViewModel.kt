@@ -1,4 +1,4 @@
-package com.example.tvshowmanager.presentation.tvshows
+package com.example.tvshowmanager.ui.tvshows
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -29,7 +29,7 @@ class AddNewTvShowFragmentViewModel @Inject constructor(
             response.onSuccess { _createMovieResponse.value = CreateMovieResponse.Successful }
             response.onFailure {
                 _createMovieResponse.value = CreateMovieResponse.Failure(
-                    it.message ?: "Something went wrong, please do try again"
+                    it.message ?: "Something went wrong, please try again later"
                 )
             }
         }

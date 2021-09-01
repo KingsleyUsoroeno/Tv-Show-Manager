@@ -74,21 +74,12 @@ dependencies {
 
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 
-    AndroidX.run {
-        implementation(navigationFragment)
-        implementation(coreKtx)
-        implementation(navigationUi)
-        implementation(multiDex)
-    }
+    implementAll(AndroidX.components)
+    implementAll(View.components)
 
     Cache.run {
         implementation(room)
         kapt(Cache.AnnotationProcessor.room)
-    }
-
-    View.run {
-        implementation(appCompat)
-        implementation(materialComponent)
     }
 
     implementAll(Network.components)
@@ -97,12 +88,15 @@ dependencies {
     implementation(DI.daggerHiltAndroid)
     kapt(DI.daggerHiltkapt)
 
-    testImplementation(Test.junit)
-    androidTestImplementation(Test.runner)
-    androidTestImplementation(Test.androidXTest)
-
     kapt(DI.AnnotationProcessor.jetpackHiltCompiler)
 
     implementAll(Apollo.components)
-    implementation(View.lifeCycleLiveData)
+
+    testImplementation(Test.runner)
+    testImplementation(Test.androidXTest)
+    testImplementation(Test.junit)
+    testImplementation(Test.truth)
+    testImplementation(Test.androidXTestCore)
+    testImplementation(Test.coroutinesTest)
+    testImplementation(Test.robolectric)
 }

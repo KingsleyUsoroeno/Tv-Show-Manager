@@ -1,4 +1,4 @@
-package com.example.tvshowmanager.presentation.main
+package com.example.tvshowmanager.ui.main
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

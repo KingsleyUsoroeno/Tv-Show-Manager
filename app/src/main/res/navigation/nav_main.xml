@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainScreenFragment"
-        android:name="com.example.tvshowmanager.presentation.main.MainScreenFragment"
+        android:name="com.example.tvshowmanager.ui.main.MainScreenFragment"
         android:label="@string/app_name_all_caps"
         tools:layout="@layout/fragment_main_screen">
         <action
@@ -20,12 +20,12 @@
 
     <fragment
         android:id="@+id/addNewTvShowFragment"
-        android:name="com.example.tvshowmanager.presentation.tvshows.AddNewTvShowFragment"
+        android:name="com.example.tvshowmanager.ui.tvshows.AddNewTvShowFragment"
         android:label="@string/app_name_all_caps"
         tools:layout="@layout/fragment_add_new_tv_show" />
     <fragment
         android:id="@+id/savedTvShowsFragment"
-        android:name="com.example.tvshowmanager.presentation.tvshows.SavedTvShowsFragment"
+        android:name="com.example.tvshowmanager.ui.tvshows.SavedTvShowsFragment"
         android:label="@string/app_name_all_caps"
         tools:layout="@layout/fragment_saved_tv_shows" />
 </navigation>

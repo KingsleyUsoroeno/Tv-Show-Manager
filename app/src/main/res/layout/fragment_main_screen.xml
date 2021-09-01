@@ -4,17 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".presentation.main.MainScreenFragment">
+    tools:context=".ui.main.MainScreenFragment">
 
-   <androidx.appcompat.widget.AppCompatImageView
-       android:id="@+id/pictureView"
-       android:layout_width="@dimen/match_constraint_height"
-       android:layout_height="250dp"
-       android:src="@drawable/movie_background"
-       android:scaleType="centerCrop"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pictureView"
+        android:layout_width="@dimen/match_constraint_height"
+        android:layout_height="250dp"
+        android:src="@drawable/movie_background"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnAddNewTvShow"

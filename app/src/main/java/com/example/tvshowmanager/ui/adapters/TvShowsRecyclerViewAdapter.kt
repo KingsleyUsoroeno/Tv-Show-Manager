@@ -1,11 +1,11 @@
-package com.example.tvshowmanager.presentation.adapters
+package com.example.tvshowmanager.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.example.tvshowmanager.data.model.Movie
-import com.example.tvshowmanager.presentation.viewHolders.TvShowsViewHolder
+import com.example.tvshowmanager.ui.viewHolders.TvShowsViewHolder
 
 class TvShowsRecyclerViewAdapter :
     ListAdapter<Movie, TvShowsViewHolder>(MovieDiffUtil) {

@@ -16,4 +16,7 @@ object Versions {
     const val runner: String = "1.2.0"
     const val apollo: String = "2.4.6"
     const val lifecycleVersion = "2.4.0-alpha03"
+    const val truth: String = "1.0.1"
+    const val robolectric: String = "4.3.1"
+    const val androidXTestCore: String = "1.4.0"
 }

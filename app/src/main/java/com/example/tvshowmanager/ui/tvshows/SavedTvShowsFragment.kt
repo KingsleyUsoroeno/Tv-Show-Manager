@@ -1,4 +1,4 @@
-package com.example.tvshowmanager.presentation.tvshows
+package com.example.tvshowmanager.ui.tvshows
 
 import android.os.Bundle
 import android.view.View
@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.example.tvshowmanager.data.model.Movie
 import com.example.tvshowmanager.databinding.FragmentSavedTvShowsBinding
-import com.example.tvshowmanager.presentation.adapters.TvShowsRecyclerViewAdapter
-import com.example.tvshowmanager.presentation.main.BaseFragment
+import com.example.tvshowmanager.ui.adapters.TvShowsRecyclerViewAdapter
+import com.example.tvshowmanager.ui.main.BaseFragment
 import com.example.tvshowmanager.utils.extensions.hide
 import com.example.tvshowmanager.utils.extensions.show
 import dagger.hilt.android.AndroidEntryPoint
